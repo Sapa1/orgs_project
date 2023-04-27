@@ -17,11 +17,11 @@ class ListProductAdapter(
 
     class ViewHolder(view: View) : RecyclerView.ViewHolder(view) {
         fun bind(product: Product) {
-            val title = itemView.findViewById<TextView>(R.id.titleCest)
+            val title = itemView.findViewById<TextView>(R.id.product_item_name)
             title.text = product.name
-            val description = itemView.findViewById<TextView>(R.id.descriptionCest)
+            val description = itemView.findViewById<TextView>(R.id.product_item_description)
             description.text = product.description
-            val cost = itemView.findViewById<TextView>(R.id.costItemCest)
+            val cost = itemView.findViewById<TextView>(R.id.product_item_value)
             cost.text = product.cost.toPlainString()
         }
     }
