@@ -8,6 +8,7 @@ import android.view.View
 import android.widget.Button
 import android.widget.EditText
 import com.example.orgs.R
+import com.example.orgs.dao.ProductsDao
 import com.example.orgs.model.Product
 import java.math.BigDecimal
 
@@ -35,6 +36,10 @@ class FormProductActivity :
             )
 
             Log.i("FormProductActivity", "onCreate: $newProduct")
+            val dao = ProductsDao()
+            dao.add(newProduct)
+            Log.i("FormProductActivity", "onCreate: ${dao.searchAll()}")
+            finish()
         }
     }
 }
