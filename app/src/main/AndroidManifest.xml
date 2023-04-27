@@ -18,7 +18,7 @@
             android:name=".ui.activity.FormProductActivity"
       />
         <activity
-            android:name=".ui.activity.MainActivity"
+            android:name=".ui.activity.ListProductActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
